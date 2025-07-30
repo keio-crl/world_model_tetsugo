@@ -1,0 +1,1 @@
+srun --pty --gres=gpu:1  --time=01:00:00 bash

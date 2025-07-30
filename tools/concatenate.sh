@@ -1,0 +1,12 @@
+uv run -m lerobot_utils.record \
+    --seq_len 30 \
+    --height 480 --width 640 \
+    --rate 5 \
+    --name try \
+    --warmup 3 \
+    --camera-indices 0 \
+    --leader-port /dev/tty.usbmodem578E0213141\
+    --follower-port /dev/tty.usbmodem578E0212901 \
+    --visualize \
+    --concatenate \
+    --scale 10
