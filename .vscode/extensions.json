@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "njpwerner.autodocstring",
+        "christian-kohler.path-intellisense",
+        "oderwat.indent-rainbow"
+    ]
+}
