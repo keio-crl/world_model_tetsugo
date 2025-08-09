@@ -3,7 +3,7 @@ import hydra
 from src.config.config import Config
 from src.world_model.model.world_model import WorldModel
 from .utils.prepare_data import prepare_data_loader, prepare_optimizer
-from src.utils.trainer.trainer import Trainer
+from src.utils.train.trainer import Trainer
 
 
 @hydra.main(version_base=None, config_path="../conf/", config_name="config")
