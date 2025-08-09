@@ -13,6 +13,7 @@ class data_config:
 @dataclass
 class TrainerConfig:
     lr: float
+    weight_decay: float
     epochs: int
     device: str
     batch_size: int
