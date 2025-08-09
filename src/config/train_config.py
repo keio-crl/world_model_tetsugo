@@ -6,6 +6,8 @@ class data_config:
     image_path: str
     leader_path: str
     follower_path: str
+    seq_length: int
+    normalize_config_name: str
 
 
 @dataclass
@@ -14,23 +16,24 @@ class TrainerConfig:
     epochs: int
     device: str
     batch_size: int
+    split_ratio: list[float]  # train, validation, test
+    save_model: bool
 
 
 @dataclass
 class TrainDetails:
     name: str
     description: str
-    data_config: data_config
+    log_by_wandb: bool
 
 
 @dataclass
-class robot_details_config:
+class RobotDetailsConfig:
     leader_port: str
     follower_port: str
 
 
 @dataclass
 class TrainConfig:
-    robot_details: robot_details_config
     trainer: TrainerConfig
     train_details: TrainDetails

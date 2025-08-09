@@ -1,0 +1,14 @@
+defaults:
+  - data: data
+  - model: model_config
+  - train: train_config
+  - _self_
+
+mode: train
+
+result:
+  base_path: result
+  normalize_path: normalize
+  model_dir_path: model
+  evaluation_dir_path: evaluation
+  test_dir_path: test

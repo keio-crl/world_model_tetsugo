@@ -3,8 +3,8 @@ import torch
 
 from torch import Tensor
 from ...config.model_config import VisionDecoderConfig
-from .utils.build_mlp import build_mlp as _build_mlp
-from .utils.get_conv_shape import get_conved_size
+from .common.build_mlp import build_mlp as _build_mlp
+from .common.get_conv_shape import get_conved_size
 
 
 class VisionDecoder(nn.Module):

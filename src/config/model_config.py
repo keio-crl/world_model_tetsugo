@@ -22,9 +22,10 @@ class RSSMConfig:
 
     vision_enocoder_config: VisionEncoderConfig
     action_dim: int
-    obs_dim: int = field(init=False)
     rnn_hidden_dim: int
     stoch_latent_dim: int
+
+    obs_dim: int = field(init=False)
     latent_state_dim: int = field(init=False)
 
     def __post_init__(self):

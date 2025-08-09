@@ -1,0 +1,7 @@
+image_path: "raw_data/ota_image_states.blosc2"
+leader_path: "raw_data/ota_joint_states.blosc2"
+follower_path: "raw_data/ota_action_states.blosc2"
+seq_length: 60
+normalize_config_name: "ota_data_normalize_config.json"
+
+

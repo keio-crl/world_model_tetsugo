@@ -3,8 +3,8 @@ import torch.nn as nn
 
 from torch import Tensor
 from ...config.model_config import VisionEncoderConfig
-from .utils.get_conv_shape import get_conved_size
-from .utils.build_mlp import build_mlp as _build_mlp
+from .common.get_conv_shape import get_conved_size
+from .common.build_mlp import build_mlp as _build_mlp
 
 
 class VisionEncoder(nn.Module):

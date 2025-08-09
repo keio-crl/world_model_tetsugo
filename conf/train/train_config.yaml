@@ -1,0 +1,11 @@
+trainer:
+  lr: 0.0001
+  batch_size: 16
+  epochs: 1000
+  device: cuda
+  save_model: true
+
+train_details:
+  name: "world model"
+  description: "Training configuration for the world model"
+  log_by_wandb: true

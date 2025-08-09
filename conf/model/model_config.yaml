@@ -1,0 +1,36 @@
+rssm:
+  vision_enocoder_config:
+    obs_size: [64, 64]
+    channels: [32, 64, 128]
+    kernels: [3, 3, 3]
+    strides: [2, 2, 2]
+    paddings: [1, 1, 1]
+    vision_feature_dim: 128
+    mlp_hidden_dim: 256
+    n_mlp_layers: 2
+  action_dim: 4
+  rnn_hidden_dim: 256
+  stoch_latent_dim: 32
+
+vision_encoder:
+  obs_size: [64, 64]
+  channels: [32, 64, 128]
+  kernels: [3, 3, 3]
+  strides: [2, 2, 2]
+  paddings: [1, 1, 1]
+  vision_feature_dim: 128
+  mlp_hidden_dim: 256
+  n_mlp_layers: 2
+
+vision_decoder:
+  obs_size: [64, 64]
+  channels: [128, 64, 32]
+  kernels: [4, 4, 4]
+  strides: [2, 2, 2]
+  paddings: [1, 1, 1]
+  vision_feature_dim: 128
+  mlp_hidden_dim: 256
+  n_mlp_layers: 2
+
+follower_decoder:
+  hidden_dim: 128
