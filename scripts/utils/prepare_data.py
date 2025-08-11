@@ -25,6 +25,7 @@ def prepare_and_normalize_data(cfg: Config) -> tuple[NDArray, NDArray, NDArray]:
     follower = normalizer.fit_transform(follower, "follower")
 
     config_path = os.path.join(
+        cfg.result.base_path,
         cfg.result.normalize_path,
         cfg.data.normalize_config_name,
     )

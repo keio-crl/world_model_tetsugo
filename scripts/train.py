@@ -1,4 +1,5 @@
 import hydra
+import wandb
 
 from src.config.config import Config
 from src.world_model.model.world_model import WorldModel
@@ -21,6 +22,7 @@ def main(cfg: Config):
         optimizer,
     )
     trainer.train()
+    wandb.finish()
 
 
 if __name__ == "__main__":
