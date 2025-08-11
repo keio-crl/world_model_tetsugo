@@ -1,0 +1,2 @@
+test_device: cuda
+context_length: 5

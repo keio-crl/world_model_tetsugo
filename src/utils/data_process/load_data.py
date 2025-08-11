@@ -36,12 +36,8 @@ def prepare_and_normalize_data(cfg: Config) -> tuple[NDArray, NDArray, NDArray]:
 
 
 def prepare_data_loader(cfg: Config) -> tuple[DataLoader, DataLoader, DataLoader]:
-    """prepare_data_loader
-
-    Args:
-        cfg (Config): Configuration object containing paths and parameters for data preparation.
-    Returns:
-        tuple[DataLoader, DataLoader, DataLoader]: train, validation ,test
+    """
+    正規化されたデータを読み込み、DataLoaderを返す関数
     """
     device = cfg.train.trainer.device
     images, leader, follower = map(torch.from_numpy, prepare_and_normalize_data(cfg))
@@ -60,19 +56,3 @@ def prepare_data_loader(cfg: Config) -> tuple[DataLoader, DataLoader, DataLoader
 
     train_loader, validation_loader, test_loader = data_loader.prepare_data()
     return train_loader, validation_loader, test_loader
-
-
-def prepare_optimizer(cfg: Config, model: torch.nn.Module) -> torch.optim.Optimizer:
-    """prepare_optimizer
-
-    Args:
-        cfg (Config): Configuration object containing optimizer parameters.
-        model (torch.nn.Module): The model to optimize.
-    Returns:
-        torch.optim.Optimizer: Configured optimizer.
-    """
-    return torch.optim.Adam(
-        model.parameters(),
-        lr=cfg.train.trainer.lr,
-        weight_decay=cfg.train.trainer.weight_decay,
-    )

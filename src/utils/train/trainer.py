@@ -1,6 +1,7 @@
 import os
 import torch
 import wandb
+from omegaconf import OmegaConf
 
 from torch import Tensor
 from tqdm import tqdm
@@ -40,9 +41,19 @@ class Trainer:
         loss_min = 1.0e10
 
         if self.cfg.train.train_details.log_by_wandb:
+            # omegaconfを使用してConfigを辞書形式に変換し、型を明示的にキャスト
+            config_dict = OmegaConf.to_container(self.cfg, resolve=True)
+            if not isinstance(config_dict, dict):
+                raise ValueError("Config could not be converted to a dictionary.")
+
+            # 型を明示的にキャスト
+            config_dict = {str(k): v for k, v in config_dict.items()}
+
             wandb.init(
                 project=self.cfg.train.train_details.project_name,
                 name=self.cfg.train.train_details.name,
+                notes=self.cfg.train.train_details.description,
+                config=config_dict,  # 辞書形式のConfigを渡す
             )
             wandb.watch(self.model, log="all")
 
@@ -53,12 +64,13 @@ class Trainer:
                 self.device,
                 self.loss_func,
                 self.optimizer,
+                self.cfg,
             )
             valid_loss = valid_loop(
-                self.model, self.valid_dataloader, self.device, self.loss_func
+                self.model, self.valid_dataloader, self.device, self.loss_func, self.cfg
             )
             test_loss = valid_loop(
-                self.model, self.test_dataloader, self.device, self.loss_func
+                self.model, self.test_dataloader, self.device, self.loss_func, self.cfg
             )
 
             if self.cfg.train.train_details.log_by_wandb:
@@ -112,8 +124,9 @@ def train_loop(
     model: WorldModel,
     train_dataloader: DataLoader,
     decive: str,
-    loss_func: Callable[[LossParameters], dict[str, Tensor]],
+    loss_func: Callable[[LossParameters, bool], dict[str, Tensor]],
     optimizer: Optimizer,
+    config: Config,
 ):
     model.train()
     total_loss, image_recon_loss, follower_recon_loss, kl_loss = 0.0, 0.0, 0.0, 0.0
@@ -124,11 +137,15 @@ def train_loop(
         leader: Tensor
         follower: Tensor
 
-        reset_masks = torch.rand(image.shape[0], device=decive) < 0.0
-
+        reset_masks = torch.rand(image.shape[0], device=decive) < 0.5
+        # debug
+        print(reset_masks)
+        # debug
         priors, posteriors, recon_img, recon_follower = model.forward(
             image, follower, leader, reset_masks
         )
+
+        loss_config = config.train.train_details.loss
 
         loss_params = LossParameters(
             image,
@@ -137,12 +154,18 @@ def train_loop(
             recon_follower,
             priors,
             posteriors,
+            loss_config.kl_balance,
+            loss_config.kl_beta,
+            loss_config.image_recon_loss_weight,
+            loss_config.follower_recon_loss_weight,
         )
-        loss = loss_func(loss_params)
 
-        total_loss = loss["total_loss"]
+        loss = loss_func(loss_params, config.train.trainer.amplify_recon_loss)
+
+        train_total_loss = loss["total_loss"]
         optimizer.zero_grad()
-        total_loss.backward()
+        train_total_loss.backward()
+
         optimizer.step()
 
         total_loss += loss["total_loss"].item()
@@ -168,7 +191,8 @@ def valid_loop(
     model: WorldModel,
     dataloader: DataLoader,
     decive: str,
-    loss_func: Callable[[LossParameters], dict[str, Tensor]],
+    loss_func: Callable[[LossParameters, bool], dict[str, Tensor]],
+    config: Config,
 ):
     model.eval()
     total_loss, image_recon_loss, follower_recon_loss, kl_loss = 0.0, 0.0, 0.0, 0.0
@@ -185,6 +209,7 @@ def valid_loop(
             leader,
         )
 
+        loss_config = config.train.train_details.loss
         loss_params = LossParameters(
             image,
             recon_img,
@@ -192,8 +217,12 @@ def valid_loop(
             recon_follower,
             priors,
             posteriors,
+            loss_config.kl_balance,
+            loss_config.kl_beta,
+            loss_config.image_recon_loss_weight,
+            loss_config.follower_recon_loss_weight,
         )
-        loss = loss_func(loss_params)
+        loss = loss_func(loss_params, config.train.trainer.amplify_recon_loss)
         total_loss += loss["total_loss"].item()
         image_recon_loss += loss["image_recon_loss"].item()
         follower_recon_loss += loss["follower_recon_loss"].item()

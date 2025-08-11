@@ -69,7 +69,7 @@ class RSSM(nn.Module):
             # Prior
             prior_params = self.prior(h)
             prior_mean, prior_std = torch.chunk(prior_params, 2, dim=-1)
-            prior_std = F.softplus(prior_std) + 1e-6  # Avoid zero std
+            prior_std = F.softplus(prior_std) + 1e-4  # Avoid zero std
             prior_dist = D.Normal(prior_mean, prior_std)
 
             # Posterior
@@ -77,7 +77,7 @@ class RSSM(nn.Module):
                 torch.cat([h, obs[:, t]], dim=-1)
             )  # (B, stoch_latent_dim * 2), posterior has obs information
             posterior_mean, posterior_std = torch.chunk(posterior_params, 2, dim=-1)
-            posterior_std = F.softplus(posterior_std) + 1e-6  # Avoid zero std
+            posterior_std = F.softplus(posterior_std) + 1e-4  # Avoid zero std
             posterior_dist = D.Normal(posterior_mean, posterior_std)
 
             z = posterior_dist.rsample()  # Sample from posterior
@@ -113,7 +113,7 @@ class RSSM(nn.Module):
         """
 
         h, z = initial_state
-        B, T = action_seq.shape
+        B, T, _ = action_seq.shape
 
         h_list, z_list = [], []
 

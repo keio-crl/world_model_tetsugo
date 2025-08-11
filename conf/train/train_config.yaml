@@ -1,14 +1,21 @@
 trainer:
   lr: 0.0001
-  weight_decay: 0.0001
+  weight_decay: 1.0e-6
   batch_size: 16
   epochs: 1000
   split_ratio: [0.7, 0.2, 0.1]  # train, validation, test
   device: cuda
   save_model: true
+  amplify_recon_loss: false
 
 train_details:
   project_name: "world_model_project"
   name: "rssm_world_model_training"
-  description: "Training configuration for the world model"
+  description: "kl_beta=1.0, kl_balance=0.8, image_recon_loss_weight=1.0, follower_recon_loss_weight=1.0"
   log_by_wandb: true
+
+  loss:
+    kl_balance: 0.8
+    kl_beta: 1.0
+    image_recon_loss_weight: 1.0
+    follower_recon_loss_weight: 1.0

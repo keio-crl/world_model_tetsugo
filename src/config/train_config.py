@@ -19,6 +19,15 @@ class TrainerConfig:
     batch_size: int
     split_ratio: list[float]  # train, validation, test
     save_model: bool
+    amplify_recon_loss: bool
+
+
+@dataclass
+class LossParametersConfig:
+    kl_balance: float
+    kl_beta: float
+    image_recon_loss_weight: float
+    follower_recon_loss_weight: float
 
 
 @dataclass
@@ -27,6 +36,7 @@ class TrainDetails:
     name: str
     description: str
     log_by_wandb: bool
+    loss: LossParametersConfig
 
 
 @dataclass

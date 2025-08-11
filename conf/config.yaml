@@ -1,7 +1,8 @@
 defaults:
   - data: data
-  - model: model_config
+  - wm_model: model_config
   - train: train_config
+  - test: test_config
   - _self_
 
 mode: train
