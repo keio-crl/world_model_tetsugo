@@ -7,6 +7,7 @@ def build_mlp(in_dim: int, out_dim: int, hidden_dim: int, n_layers: int):
 
     if n_layers == 0:
         layers.append(nn.Linear(in_dim, out_dim))
+
     else:
         layers.append(nn.Linear(in_dim, hidden_dim))
         layers.append(nn.ReLU())

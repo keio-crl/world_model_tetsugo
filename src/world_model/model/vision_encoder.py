@@ -35,7 +35,6 @@ class VisionEncoder(nn.Module):
         x = self.encoder(x)
         x = torch.flatten(x, start_dim=1)
         x = self.fc(x)
-
         return x
 
     def _build_conv_layers(

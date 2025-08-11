@@ -11,3 +11,4 @@ wheels/
 raw_data/
 train.slurm
 outputs/
+wandb/

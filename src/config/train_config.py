@@ -23,6 +23,7 @@ class TrainerConfig:
 
 @dataclass
 class TrainDetails:
+    project_name: str
     name: str
     description: str
     log_by_wandb: bool

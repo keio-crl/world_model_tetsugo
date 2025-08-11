@@ -1,4 +1,4 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 
 @dataclass
@@ -24,21 +24,8 @@ class RSSMConfig:
     action_dim: int
     rnn_hidden_dim: int
     stoch_latent_dim: int
-
-    obs_dim: int = field(init=False)
-    latent_state_dim: int = field(init=False)
-
-    def __post_init__(self):
-        # 初期化あとにobs_dimをaction_dimとvision_encoderのmlp_hidden_dimを使って計算する
-        if self.vision_enocoder_config.n_mlp_layers > 0:
-            self.obs_dim = self.vision_enocoder_config.mlp_hidden_dim + self.action_dim
-        else:
-            self.obs_dim = (
-                self.vision_enocoder_config.vision_feature_dim + self.action_dim
-            )
-
-        # latent_state_dimの計算
-        self.latent_state_dim = self.rnn_hidden_dim + self.stoch_latent_dim
+    obs_dim: int
+    latent_state_dim: int
 
 
 @dataclass

@@ -1,36 +1,29 @@
 rssm:
-  vision_enocoder_config:
-    obs_size: [64, 64]
-    channels: [32, 64, 128]
-    kernels: [3, 3, 3]
-    strides: [2, 2, 2]
-    paddings: [1, 1, 1]
-    vision_feature_dim: 128
-    mlp_hidden_dim: 256
-    n_mlp_layers: 2
-  action_dim: 4
+  action_dim: 6
   rnn_hidden_dim: 256
-  stoch_latent_dim: 32
+  stoch_latent_dim: 256
+  obs_dim: 0 # 初期化のために0を設定, obs_dim = vision_feature_dim + action_dim で計算される
+  latent_state_dim: 0 # 初期化のために0を設定, latent_state_dim = stoch_latent_dim + rnn_hidden_dim で計算される
 
 vision_encoder:
-  obs_size: [64, 64]
+  obs_size: [48, 64]
   channels: [32, 64, 128]
   kernels: [3, 3, 3]
   strides: [2, 2, 2]
   paddings: [1, 1, 1]
-  vision_feature_dim: 128
+  vision_feature_dim: 512
   mlp_hidden_dim: 256
-  n_mlp_layers: 2
+  n_mlp_layers: 0
 
 vision_decoder:
-  obs_size: [64, 64]
+  obs_size: [48, 64]
   channels: [128, 64, 32]
-  kernels: [4, 4, 4]
+  kernels: [3, 3, 3]
   strides: [2, 2, 2]
   paddings: [1, 1, 1]
-  vision_feature_dim: 128
+  vision_feature_dim: 512
   mlp_hidden_dim: 256
-  n_mlp_layers: 2
+  n_mlp_layers: 0
 
 follower_decoder:
   hidden_dim: 128

@@ -45,12 +45,12 @@ def prepare_data_loader(cfg: Config) -> tuple[DataLoader, DataLoader, DataLoader
     device = cfg.train.trainer.device
     images, leader, follower = map(torch.from_numpy, prepare_and_normalize_data(cfg))
 
-    images = images.to(device)
-    leader = leader.to(device)
-    follower = follower.to(device)
+    images = images.to(device).float()
+    leader = leader.to(device).float()
+    follower = follower.to(device).float()
 
     dataset = MyDataset(cfg.train, images, leader, follower)
-
+    print("split_ratio", cfg.train.trainer.split_ratio)
     data_loader = MyDataLoader(
         my_dataset=dataset,
         ratio=cfg.train.trainer.split_ratio,

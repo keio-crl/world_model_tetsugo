@@ -44,19 +44,23 @@ class RSSM(nn.Module):
         self,
         obs: Tensor,  # (B, T, obs_dim)
         action: Tensor,  # (B, T, action_dim)
-        resets: Tensor,  # (B, T) 0 or 1
+        resets: Tensor | None,  # (B, T) 0 or 1
     ) -> tuple[D.Normal, D.Normal, Tensor, Tensor]:
-        reset_masks = ~resets
         B, T, _ = obs.shape
+
+        if resets is None:
+            reset_masks = None
+        else:
+            reset_masks = ~resets
 
         h_list, z_list, prior_list, posterior_list = [], [], [], []
         h = torch.zeros(B, self.config.rnn_hidden_dim, device=obs.device)
         z = torch.zeros(B, self.config.stoch_latent_dim, device=obs.device)
 
         for t in range(T):
-            if t > 0:
-                h = (reset_masks[t] * h).float()
-                z = (reset_masks[t] * z).float()
+            if t > 0 and reset_masks is not None:
+                h = (reset_masks.unsqueeze(1) * h).float()
+                z = (reset_masks.unsqueeze(1) * z).float()
 
             prev_action = action[:, t - 1] if t > 0 else torch.zeros_like(action[:, 0])
             rnn_input = torch.cat([z, prev_action], dim=-1)
