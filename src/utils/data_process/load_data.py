@@ -1,12 +1,14 @@
 import os
+
 import torch
-from torch.utils.data import DataLoader
 from numpy.typing import NDArray
-from src.utils.data_process.blosc_file_handler import BLOSCFileHandler
+from torch.utils.data import DataLoader
+
 from src.config.config import Config
-from src.utils.normalizer.normalizer import Normalizer
-from src.utils.data_process.dataset import MyDataset
+from src.utils.data_process.blosc_file_handler import BLOSCFileHandler
 from src.utils.data_process.data_loader import MyDataLoader
+from src.utils.data_process.dataset import MyDataset
+from src.utils.normalizer.normalizer import Normalizer
 
 
 def prepare_and_normalize_data(cfg: Config) -> tuple[NDArray, NDArray, NDArray]:
@@ -47,7 +49,6 @@ def prepare_data_loader(cfg: Config) -> tuple[DataLoader, DataLoader, DataLoader
     follower = follower.to(device).float()
 
     dataset = MyDataset(cfg.train, images, leader, follower)
-    print("split_ratio", cfg.train.trainer.split_ratio)
     data_loader = MyDataLoader(
         my_dataset=dataset,
         ratio=cfg.train.trainer.split_ratio,

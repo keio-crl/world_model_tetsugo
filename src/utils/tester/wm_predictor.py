@@ -1,8 +1,20 @@
+from typing import TypedDict
+
 import torch
 from torch import Tensor
-from ...world_model.model.world_model import WorldModel
+
 from ...config.config import Config
+from ...world_model.model.world_model import WorldModel
 from ..data_process.load_data import prepare_data_loader
+
+
+class WMPredictions(TypedDict):
+    context_recon_images: Tensor
+    context_recon_follower: Tensor
+    recon_image: Tensor
+    recon_follower: Tensor
+    original_images: Tensor
+    original_follower: Tensor
 
 
 class WMPredictor:
@@ -11,8 +23,9 @@ class WMPredictor:
         self.wm_model = wm_model
 
     @torch.no_grad()
-    def predict(self) -> tuple[Tensor, Tensor, Tensor, Tensor]:
+    def predict(self) -> WMPredictions:
         images, leader, follower = self._prepare_data(self.cfg)
+
         contex_len = self.cfg.test.context_length
 
         # 予測のためのコンテキストデータを取得
@@ -56,7 +69,16 @@ class WMPredictor:
             context_latent_state
         )
 
-        return context_recon_images, context_recon_follower, recon_image, recon_follower
+        prediction = WMPredictions(
+            context_recon_images=context_recon_images,
+            context_recon_follower=context_recon_follower,
+            recon_image=recon_image,
+            recon_follower=recon_follower,
+            original_images=images,
+            original_follower=follower,
+        )
+
+        return prediction
 
     def _prepare_data(self, cfg: Config) -> tuple[Tensor, Tensor, Tensor]:
         _, _, test_dataloader = prepare_data_loader(cfg)
@@ -64,8 +86,8 @@ class WMPredictor:
         images, leader, follower = data
         device = getattr(self.wm_model, "device", None)
 
-        images = images.to(device)
-        leader = leader.to(device)
-        follower = follower.to(device)
+        images = images.to(device)[0:1]  # 1つのバッチのみを使用
+        leader = leader.to(device)[0:1]
+        follower = follower.to(device)[0:1]
 
         return images, leader, follower
