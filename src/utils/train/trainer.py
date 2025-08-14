@@ -3,16 +3,16 @@ from typing import Callable
 
 import torch
 from omegaconf import OmegaConf
-from safetensors.torch import save_file
 from torch import Tensor
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 import wandb
-from src.utils.train.loss_func import LossParameters, world_model_loss
 
 from ...config.config import Config
+from ...utils.train.loss_func import LossParameters, world_model_loss
+from ...utils.train.save_model import ModelSaver
 from ...world_model.model.world_model import WorldModel
 
 
@@ -34,6 +34,7 @@ class Trainer:
         self.test_dataloader = test_dataloader
         self.optimizer = optimizer
         self.loss_func = world_model_loss
+        self.model_saver = ModelSaver()
 
     def train(self) -> None:
         epoch = self.cfg.train.trainer.epochs
@@ -105,7 +106,6 @@ class Trainer:
             ):
                 loss_min = valid_loss["total_loss"]
                 self._save_mmodel()
-                print(f"Model saved at epoch {e} with loss {loss_min}")
 
     def _save_mmodel(self):
         save_path = os.path.join(
@@ -119,7 +119,7 @@ class Trainer:
 
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
-        save_file(self.model.state_dict(), save_path)
+        self.model_saver.add(self.model.state_dict(), save_path)
 
 
 def train_loop(
@@ -140,9 +140,7 @@ def train_loop(
         follower: Tensor
 
         reset_masks = torch.rand(image.shape[0], device=decive) < 0.5
-        # debug
-        print(reset_masks)
-        # debug
+
         priors, posteriors, recon_img, recon_follower = model.forward(
             image, follower, leader, reset_masks
         )
