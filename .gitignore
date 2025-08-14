@@ -6,9 +6,11 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
-.venv
+# temporary files
 raw_data/
 train.slurm
 outputs/
 wandb/
+slurm_logs/
+# Virtual environments
+.venv
