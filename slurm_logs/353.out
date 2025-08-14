@@ -1,0 +1,2366 @@
+wandb: Currently logged in as: tetsugou2002 (tetsugou2002-keio-university-global-page) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.21.0
+wandb: Run data is saved locally in /home/tetsugo/world_model_tetsugo/wandb/run-20250814_150020-d9shif9r
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rssm_world_model_training
+wandb: ⭐️ View project at https://wandb.ai/tetsugou2002-keio-university-global-page/world_model_project
+wandb: 🚀 View run at https://wandb.ai/tetsugou2002-keio-university-global-page/world_model_project/runs/d9shif9r
+  0%|          | 0/1000 [00:00<?, ?it/s]tensor([False,  True,  True,  True, False, False, False, False,  True, False,
+        False,  True, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1700.0494, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1696.9376, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.5531, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.5587, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False,  True,  True,  True,  True, False,  True,
+         True,  True,  True,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1704.7235, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1701.6942, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.5736, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.4557, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True, False,  True,  True, False, False, False,  True,
+        False,  True,  True, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1696.0525, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1692.9458, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.5771, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.5297, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False, False, False, False, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1705.6371, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1702.5100, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.5113, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.6158, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1692.8967, device='cuda:0'),
+    'image_recon_loss': tensor(1689.6300, device='cuda:0'),
+    'follower_recon_loss': tensor(2.6097, device='cuda:0'),
+    'kl_loss': tensor(0.6570, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1649.3593, device='cuda:0'),
+    'image_recon_loss': tensor(1646.1737, device='cuda:0'),
+    'follower_recon_loss': tensor(2.5349, device='cuda:0'),
+    'kl_loss': tensor(0.6506, device='cuda:0')
+}
+  0%|          | 1/1000 [00:01<20:59,  1.26s/it]Model saved at epoch 0 with loss 1692.896728515625
+tensor([ True,  True, False,  True, False,  True,  True, False, False, False,
+        False,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1687.3978, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1684.3354, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.5458, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.5166, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True, False,  True, False, False,  True, False,
+        False,  True,  True,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1686.6602, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1683.6160, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.4739, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.5704, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False,  True,  True, False, False, False, False,
+        False,  True, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1673.0183, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1669.8853, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.4568, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.6762, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True,  True, False, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1659.8147, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1656.5476, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.4324, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(0.8347, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1668.9463, device='cuda:0'),
+    'image_recon_loss': tensor(1665.2385, device='cuda:0'),
+    'follower_recon_loss': tensor(2.5151, device='cuda:0'),
+    'kl_loss': tensor(1.1926, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1625.5703, device='cuda:0'),
+    'image_recon_loss': tensor(1621.9565, device='cuda:0'),
+    'follower_recon_loss': tensor(2.4323, device='cuda:0'),
+    'kl_loss': tensor(1.1816, device='cuda:0')
+}
+  0%|          | 2/1000 [00:02<16:59,  1.02s/it]Model saved at epoch 1 with loss 1668.9462890625
+tensor([False,  True,  True, False, False,  True, False,  True,  True, False,
+         True, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1669.9277, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1666.4658, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.4210, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(1.0409, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False,  True,  True, False, False, False,  True,
+        False, False, False,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1658.2147, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1654.4213, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.3311, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(1.4624, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False, False, False, False,  True,  True,  True,  True,
+        False, False,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1642.2142, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1637.8435, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.3403, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(2.0304, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True,  True,  True,  True, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1642.1859, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1637.1093, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.3118, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(2.7649, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1635.4136, device='cuda:0'),
+    'image_recon_loss': tensor(1628.4563, device='cuda:0'),
+    'follower_recon_loss': tensor(2.3005, device='cuda:0'),
+    'kl_loss': tensor(4.6567, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1592.7094, device='cuda:0'),
+    'image_recon_loss': tensor(1585.8879, device='cuda:0'),
+    'follower_recon_loss': tensor(2.2048, device='cuda:0'),
+    'kl_loss': tensor(4.6166, device='cuda:0')
+}
+  0%|          | 3/1000 [00:02<15:51,  1.05it/s]Model saved at epoch 2 with loss 1635.41357421875
+tensor([False,  True, False, False, False,  True, False, False,  True, False,
+         True, False, False, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1646.8173, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1640.1576, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.2415, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(4.4183, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True, False, False, False,  True,  True, False,
+        False,  True, False, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1603.4863, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1594.9609, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.1068, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(6.4186, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True,  True,  True,  True, False,  True,
+        False, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1624.2999, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1613.4229, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(2.1026, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(8.7744, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False, False,  True,  True,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1583.5498, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1568.4711, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.9176, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(13.1611, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1573.8036, device='cuda:0'),
+    'image_recon_loss': tensor(1549.4526, device='cuda:0'),
+    'follower_recon_loss': tensor(1.9143, device='cuda:0'),
+    'kl_loss': tensor(22.4367, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1532.4070, device='cuda:0'),
+    'image_recon_loss': tensor(1508.4541, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7858, device='cuda:0'),
+    'kl_loss': tensor(22.1671, device='cuda:0')
+}
+  0%|          | 4/1000 [00:03<15:10,  1.09it/s]Model saved at epoch 3 with loss 1573.8035888671875
+tensor([ True,  True, False,  True,  True, False, False,  True, False, False,
+        False,  True, False, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1567.3533, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1545.3722, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.8659, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(20.1152, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False,  True,  True,  True, False,  True, False,
+         True, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1569.8870, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1538.1823, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7914, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(29.9133, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True, False, False, False,  True,  True, False,
+         True, False,  True,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1559.7157, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1513.9575, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7366, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(44.0216, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False,  True,  True,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1536.7966, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1479.6775, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7761, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(55.3431, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1510.1036, device='cuda:0'),
+    'image_recon_loss': tensor(1419.2108, device='cuda:0'),
+    'follower_recon_loss': tensor(2.4529, device='cuda:0'),
+    'kl_loss': tensor(88.4400, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1470.9921, device='cuda:0'),
+    'image_recon_loss': tensor(1381.5099, device='cuda:0'),
+    'follower_recon_loss': tensor(2.1649, device='cuda:0'),
+    'kl_loss': tensor(87.3172, device='cuda:0')
+}
+  0%|          | 5/1000 [00:04<14:49,  1.12it/s]Model saved at epoch 4 with loss 1510.1036376953125
+tensor([ True, False,  True,  True, False,  True, False,  True, False, False,
+         True,  True, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1522.8179, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1442.8788, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.8778, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(78.0613, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True, False, False,  True, False,  True,  True,
+         True,  True, False, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1508.5769, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1424.9664, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.9452, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(81.6653, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False, False,  True,  True, False,  True, False,
+         True,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1463.2386, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1382.8721, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.9780, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(78.3886, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True,  True, False,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1467.5277, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1397.8875, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7932, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(67.8470, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1390.3824, device='cuda:0'),
+    'image_recon_loss': tensor(1318.3684, device='cuda:0'),
+    'follower_recon_loss': tensor(2.2179, device='cuda:0'),
+    'kl_loss': tensor(69.7961, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1354.1305, device='cuda:0'),
+    'image_recon_loss': tensor(1283.2861, device='cuda:0'),
+    'follower_recon_loss': tensor(1.9404, device='cuda:0'),
+    'kl_loss': tensor(68.9039, device='cuda:0')
+}
+  1%|          | 6/1000 [00:05<14:35,  1.14it/s]Model saved at epoch 5 with loss 1390.3824462890625
+tensor([ True, False, False,  True,  True,  True,  True,  True, False, False,
+         True, False, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1402.6965, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1337.1360, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.8577, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(63.7028, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True,  True, False, False,  True, False, False, False,
+         True,  True,  True,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1393.8063, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1334.4127, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7967, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(57.5968, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True, False, False, False, False, False, False,
+         True,  True, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1335.9200, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1278.6211, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7758, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(55.5232, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True,  True, False, False, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1312.6562, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1258.3409, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7174, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(52.5978, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1252.7933, device='cuda:0'),
+    'image_recon_loss': tensor(1198.6907, device='cuda:0'),
+    'follower_recon_loss': tensor(1.8420, device='cuda:0'),
+    'kl_loss': tensor(52.2606, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1219.5803, device='cuda:0'),
+    'image_recon_loss': tensor(1166.3944, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6697, device='cuda:0'),
+    'kl_loss': tensor(51.5162, device='cuda:0')
+}
+  1%|          | 7/1000 [00:06<14:25,  1.15it/s]Model saved at epoch 6 with loss 1252.7933349609375
+tensor([ True, False, False,  True,  True, False,  True,  True,  True, False,
+         True,  True,  True, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1293.1064, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1241.0737, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6818, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(50.3510, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True,  True, False,  True, False, False,
+         True,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1277.0359, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1220.5088, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6756, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(54.8516, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True,  True,  True, False,  True, False, False, False,
+         True, False,  True,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1232.6078, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1166.2930, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7465, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(64.5683, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False,  True,  True, False, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1204.5353, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1125.2612, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6517, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(77.6223, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(1129.9594, device='cuda:0'),
+    'image_recon_loss': tensor(1045.6174, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7862, device='cuda:0'),
+    'kl_loss': tensor(82.5557, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(1102.1969, device='cuda:0'),
+    'image_recon_loss': tensor(1019.1785, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6248, device='cuda:0'),
+    'kl_loss': tensor(81.3935, device='cuda:0')
+}
+  1%|          | 8/1000 [00:07<14:22,  1.15it/s]Model saved at epoch 7 with loss 1129.9593505859375
+tensor([False, False,  True,  True, False, False,  True, False, False, False,
+        False, False, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1134.8938, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1048.5502, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6062, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(84.7375, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True,  True,  True, False,  True,  True, False,  True,
+        False, False,  True, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1142.8464, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(1053.2412, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7325, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(87.8728, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False, False, False, False, False,  True, False, False,
+        False,  True, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1055.7207, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(976.5199, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6933, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(77.5075, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True,  True,  True, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1061.3464, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(980.9650, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6376, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(78.7438, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(950.1957, device='cuda:0'),
+    'image_recon_loss': tensor(889.3579, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7858, device='cuda:0'),
+    'kl_loss': tensor(59.0520, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(925.6846, device='cuda:0'),
+    'image_recon_loss': tensor(865.7976, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6492, device='cuda:0'),
+    'kl_loss': tensor(58.2378, device='cuda:0')
+}
+  1%|          | 9/1000 [00:08<14:15,  1.16it/s]Model saved at epoch 8 with loss 950.1956787109375
+tensor([ True, False, False, False, False, False, False, False,  True,  True,
+         True,  True,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(1002.2025, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(930.1648, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6502, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(70.3875, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False, False,  True, False, False, False,  True,
+        False,  True,  True, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(959.2166, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(886.3331, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7080, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(71.1754, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False, False,  True, False, False,  True, False, False,
+         True, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(893.5339, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(824.5605, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7006, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(67.2728, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True, False,  True, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(896.4959, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(817.0608, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6046, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(77.8306, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(798.2797, device='cuda:0'),
+    'image_recon_loss': tensor(738.0156, device='cuda:0'),
+    'follower_recon_loss': tensor(1.8089, device='cuda:0'),
+    'kl_loss': tensor(58.4552, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(777.5930, device='cuda:0'),
+    'image_recon_loss': tensor(718.4972, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6383, device='cuda:0'),
+    'kl_loss': tensor(57.4575, device='cuda:0')
+}
+  1%|          | 10/1000 [00:08<14:12,  1.16it/s]Model saved at epoch 9 with loss 798.2796630859375
+tensor([ True,  True, False, False,  True, False,  True,  True, False,  True,
+         True, False,  True,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(859.6164, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(772.5765, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.7149, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(85.3250, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True,  True, False, False,  True, False, False, False,
+         True, False,  True,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(813.6641, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(721.2474, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6213, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(90.7954, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False,  True, False,  True,  True,  True, False, False,
+         True, False,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(787.7971, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(690.8641, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6614, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(95.2716, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True, False, False, False, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(731.6348, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(648.1439, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5998, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(81.8911, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(656.5178, device='cuda:0'),
+    'image_recon_loss': tensor(605.2930, device='cuda:0'),
+    'follower_recon_loss': tensor(1.8081, device='cuda:0'),
+    'kl_loss': tensor(49.4168, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(639.6107, device='cuda:0'),
+    'image_recon_loss': tensor(589.4810, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6247, device='cuda:0'),
+    'kl_loss': tensor(48.5050, device='cuda:0')
+}
+  1%|          | 11/1000 [00:09<14:11,  1.16it/s]Model saved at epoch 10 with loss 656.517822265625
+tensor([ True, False,  True,  True,  True, False,  True,  True, False,  True,
+         True,  True,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(745.2921, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(637.5663, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6819, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(106.0439, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True, False,  True,  True, False,  True,  True,
+        False, False, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(676.4560, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(595.2962, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6608, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(79.4989, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False, False, False, False,  True,  True, False,
+         True,  True, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(627.8042, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(560.1666, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5771, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(66.0605, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False, False,  True,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(625.2434, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(551.0895, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6570, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(72.4969, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(536.0905, device='cuda:0'),
+    'image_recon_loss': tensor(501.3928, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7681, device='cuda:0'),
+    'kl_loss': tensor(32.9296, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(521.7217, device='cuda:0'),
+    'image_recon_loss': tensor(487.7314, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6067, device='cuda:0'),
+    'kl_loss': tensor(32.3837, device='cuda:0')
+}
+  1%|          | 12/1000 [00:10<14:14,  1.16it/s]Model saved at epoch 11 with loss 536.0904541015625
+tensor([ True, False,  True, False,  True,  True, False,  True, False,  True,
+         True, False, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(588.9494, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(516.1223, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6373, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(71.1897, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True, False,  True, False,  True,  True, False,
+        False, False,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(567.6736, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(489.1215, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6103, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(76.9418, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False, False,  True, False,  True, False, False,  True,
+         True,  True, False, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(544.8023, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(470.8723, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6504, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(72.2796, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True, False,  True, False, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(525.5359, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(453.4277, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6586, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(70.4496, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(446.8223, device='cuda:0'),
+    'image_recon_loss': tensor(421.1063, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7639, device='cuda:0'),
+    'kl_loss': tensor(23.9520, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(435.7705, device='cuda:0'),
+    'image_recon_loss': tensor(410.6140, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6201, device='cuda:0'),
+    'kl_loss': tensor(23.5363, device='cuda:0')
+}
+  1%|▏         | 13/1000 [00:11<14:09,  1.16it/s]Model saved at epoch 12 with loss 446.822265625
+tensor([False,  True, False, False,  True, False, False, False,  True, False,
+         True,  True, False,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(493.9608, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(426.3862, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6355, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(65.9391, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False, False, False, False,  True, False, False, False,
+        False, False,  True,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(449.5242, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(406.7945, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6268, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(41.1029, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False, False, False, False, False, False, False,  True,
+         True,  True, False, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(446.4828, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(397.7014, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6212, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(47.1602, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True,  True,  True,  True,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(474.5251, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(399.0140, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6413, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(73.8699, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(377.0654, device='cuda:0'),
+    'image_recon_loss': tensor(360.3186, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7655, device='cuda:0'),
+    'kl_loss': tensor(14.9814, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(367.2609, device='cuda:0'),
+    'image_recon_loss': tensor(350.9095, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6033, device='cuda:0'),
+    'kl_loss': tensor(14.7481, device='cuda:0')
+}
+  1%|▏         | 14/1000 [00:12<14:06,  1.16it/s]Model saved at epoch 13 with loss 377.06536865234375
+tensor([False, False, False, False,  True, False, False,  True,  True,  True,
+         True,  True, False, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(409.6529, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(364.0738, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6130, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(43.9660, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True,  True,  True, False,  True, False,  True,
+        False, False,  True,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(410.5379, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(354.7132, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6679, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(54.1568, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True,  True,  True,  True,  True,  True, False,
+        False, False, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(393.9456, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(339.4577, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6268, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(52.8612, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True, False,  True,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(390.8694, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(329.6302, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5977, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(59.6415, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(324.5590, device='cuda:0'),
+    'image_recon_loss': tensor(311.5591, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7805, device='cuda:0'),
+    'kl_loss': tensor(11.2195, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(316.0724, device='cuda:0'),
+    'image_recon_loss': tensor(303.3551, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6079, device='cuda:0'),
+    'kl_loss': tensor(11.1094, device='cuda:0')
+}
+  2%|▏         | 15/1000 [00:13<14:05,  1.17it/s]Model saved at epoch 14 with loss 324.5589904785156
+tensor([False,  True,  True,  True,  True,  True, False, False, False, False,
+         True,  True,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(372.6399, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(320.2540, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6714, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(50.7145, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False, False,  True,  True,  True, False,  True,
+         True, False,  True, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(364.0253, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(310.2553, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6124, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(52.1575, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True,  True,  True,  True, False,  True, False,
+        False, False,  True,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(346.8939, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(299.0600, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6046, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(46.2293, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False, False, False,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(317.9444, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(282.3759, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6250, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(33.9435, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(285.1125, device='cuda:0'),
+    'image_recon_loss': tensor(273.6838, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7748, device='cuda:0'),
+    'kl_loss': tensor(9.6540, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(277.6298, device='cuda:0'),
+    'image_recon_loss': tensor(266.4068, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5992, device='cuda:0'),
+    'kl_loss': tensor(9.6239, device='cuda:0')
+}
+  2%|▏         | 16/1000 [00:14<14:05,  1.16it/s]Model saved at epoch 15 with loss 285.1125183105469
+tensor([False, False,  True, False, False, False, False, False, False,  True,
+         True,  True,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(311.0164, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(275.7881, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5915, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(33.6369, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True, False, False,  True, False, False, False,  True,
+         True, False, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(306.2938, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(271.2501, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6474, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(33.3963, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False, False, False,  True,  True, False,  True, False,
+        False, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(292.2027, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(258.6531, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6234, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(31.9262, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True,  True, False,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(300.6664, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(254.8537, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6066, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(44.2061, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(253.5771, device='cuda:0'),
+    'image_recon_loss': tensor(243.5814, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7498, device='cuda:0'),
+    'kl_loss': tensor(8.2460, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(246.8249, device='cuda:0'),
+    'image_recon_loss': tensor(237.0035, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5859, device='cuda:0'),
+    'kl_loss': tensor(8.2355, device='cuda:0')
+}
+  2%|▏         | 17/1000 [00:14<14:05,  1.16it/s]Model saved at epoch 16 with loss 253.57713317871094
+tensor([ True, False,  True, False, False,  True,  True,  True, False,  True,
+        False,  True, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(292.3261, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(252.1154, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6656, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(38.5452, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True, False, False,  True, False, False,  True,
+         True, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(287.1973, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(244.2032, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5750, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(41.4191, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False,  True,  True, False, False, False, False,
+        False, False, False, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(254.1562, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(228.0453, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5713, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(24.5396, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True, False, False,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(266.7128, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(229.9657, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6762, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(35.0709, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(227.4985, device='cuda:0'),
+    'image_recon_loss': tensor(218.4515, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7348, device='cuda:0'),
+    'kl_loss': tensor(7.3123, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(221.9541, device='cuda:0'),
+    'image_recon_loss': tensor(213.0815, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5799, device='cuda:0'),
+    'kl_loss': tensor(7.2928, device='cuda:0')
+}
+  2%|▏         | 18/1000 [00:15<14:02,  1.17it/s]Model saved at epoch 17 with loss 227.49851989746094
+tensor([False,  True,  True, False, False,  True,  True,  True, False, False,
+         True, False, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(252.1279, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(220.2591, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5932, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(30.2756, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True,  True, False,  True, False, False,
+        False, False, False,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(254.9937, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(217.9134, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5855, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(35.4948, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True,  True,  True, False, False,  True, False, False,
+        False,  True, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(249.6623, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(213.9600, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6141, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(34.0883, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True,  True,  True,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(242.9267, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(205.0354, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6619, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(36.2294, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(204.8748, device='cuda:0'),
+    'image_recon_loss': tensor(196.8187, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7322, device='cuda:0'),
+    'kl_loss': tensor(6.3239, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(199.6102, device='cuda:0'),
+    'image_recon_loss': tensor(191.7092, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5725, device='cuda:0'),
+    'kl_loss': tensor(6.3285, device='cuda:0')
+}
+  2%|▏         | 19/1000 [00:16<14:00,  1.17it/s]Model saved at epoch 18 with loss 204.8748016357422
+tensor([ True,  True,  True, False,  True,  True,  True, False,  True,  True,
+         True, False,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(247.0096, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(203.8115, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6278, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(41.5703, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True,  True,  True,  True,  True,  True, False,
+         True, False, False, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(229.6895, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(198.4076, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5998, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(29.6821, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True,  True,  True,  True, False, False,  True, False,
+         True,  True,  True,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(232.5755, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(192.7515, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6458, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(38.1781, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True, False, False, False, False, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(196.8506, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(178.2752, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5681, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.0073, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(186.1092, device='cuda:0'),
+    'image_recon_loss': tensor(178.7168, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7332, device='cuda:0'),
+    'kl_loss': tensor(5.6592, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(180.9720, device='cuda:0'),
+    'image_recon_loss': tensor(173.7559, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5623, device='cuda:0'),
+    'kl_loss': tensor(5.6539, device='cuda:0')
+}
+  2%|▏         | 20/1000 [00:17<14:00,  1.17it/s]Model saved at epoch 19 with loss 186.10922241210938
+tensor([ True,  True, False,  True,  True,  True,  True, False, False,  True,
+         True,  True, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(219.9608, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(186.0804, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6469, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(32.2335, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True, False, False,  True,  True,  True, False,
+         True,  True,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(210.7678, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(177.7664, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5366, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(31.4647, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True,  True, False,  True, False,  True,
+        False,  True,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(208.5634, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(175.0897, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6193, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(31.8543, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True, False, False, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(191.7596, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(168.7336, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5938, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(21.4322, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(169.6730, device='cuda:0'),
+    'image_recon_loss': tensor(162.9063, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7231, device='cuda:0'),
+    'kl_loss': tensor(5.0436, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(165.1014, device='cuda:0'),
+    'image_recon_loss': tensor(158.4768, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5589, device='cuda:0'),
+    'kl_loss': tensor(5.0657, device='cuda:0')
+}
+  2%|▏         | 21/1000 [00:18<14:01,  1.16it/s]Model saved at epoch 20 with loss 169.67295837402344
+tensor([ True,  True, False,  True, False,  True, False, False,  True, False,
+        False, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(192.7567, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(167.7708, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6315, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(23.3544, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True,  True, False,  True,  True,  True, False, False,
+         True, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(201.0736, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(164.2594, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5813, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(35.2328, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True,  True,  True,  True, False, False, False, False,
+        False, False, False, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(175.9344, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(157.5438, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5675, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(16.8232, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False,  True, False, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(180.4193, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(154.6315, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5644, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(24.2234, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(155.5247, device='cuda:0'),
+    'image_recon_loss': tensor(149.3542, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7151, device='cuda:0'),
+    'kl_loss': tensor(4.4555, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(150.9728, device='cuda:0'),
+    'image_recon_loss': tensor(144.9497, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5449, device='cuda:0'),
+    'kl_loss': tensor(4.4781, device='cuda:0')
+}
+  2%|▏         | 22/1000 [00:19<13:58,  1.17it/s]Model saved at epoch 21 with loss 155.5247344970703
+tensor([ True,  True, False, False, False, False, False,  True, False,  True,
+        False, False,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(170.8826, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(149.9704, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5803, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(19.3318, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False, False, False, False,  True, False,  True,  True,
+        False, False, False, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(165.8660, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(147.5876, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6062, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(16.6722, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False,  True, False,  True,  True, False,  True,  True,
+        False, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(171.9062, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(147.3817, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5650, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(22.9595, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False,  True, False, False, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(169.1258, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(144.9771, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5736, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(22.5752, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(142.9523, device='cuda:0'),
+    'image_recon_loss': tensor(137.3735, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7358, device='cuda:0'),
+    'kl_loss': tensor(3.8429, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(138.5985, device='cuda:0'),
+    'image_recon_loss': tensor(133.2046, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5621, device='cuda:0'),
+    'kl_loss': tensor(3.8318, device='cuda:0')
+}
+  2%|▏         | 23/1000 [00:20<13:56,  1.17it/s]Model saved at epoch 22 with loss 142.95225524902344
+tensor([False, False,  True,  True, False, False,  True,  True,  True,  True,
+         True, False, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(165.2601, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(141.4705, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6117, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(22.1779, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True, False,  True, False,  True,  True, False,
+         True, False, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(158.4179, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(139.2215, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5935, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.6029, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False, False, False, False,  True, False,  True,  True,
+         True,  True,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(156.9830, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(133.2537, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5497, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(22.1797, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True, False, False, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(144.4888, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(129.9919, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5818, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(12.9150, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(132.5657, device='cuda:0'),
+    'image_recon_loss': tensor(127.4586, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7160, device='cuda:0'),
+    'kl_loss': tensor(3.3911, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(127.9983, device='cuda:0'),
+    'image_recon_loss': tensor(123.0494, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5521, device='cuda:0'),
+    'kl_loss': tensor(3.3968, device='cuda:0')
+}
+  2%|▏         | 24/1000 [00:20<13:53,  1.17it/s]Model saved at epoch 23 with loss 132.56565856933594
+tensor([ True, False,  True,  True,  True,  True,  True,  True, False, False,
+        False,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(161.9166, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(131.7327, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6190, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(28.5649, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True,  True,  True, False, False, False, False,
+        False,  True, False,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(147.3878, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(128.7931, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6001, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(16.9947, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False,  True,  True,  True, False,  True,  True,
+         True,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(163.9803, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(129.7366, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5666, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(32.6771, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True, False, False,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(146.3071, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(119.5125, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4918, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(25.3028, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(124.1968, device='cuda:0'),
+    'image_recon_loss': tensor(119.4705, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6991, device='cuda:0'),
+    'kl_loss': tensor(3.0272, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(119.2318, device='cuda:0'),
+    'image_recon_loss': tensor(114.6384, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5556, device='cuda:0'),
+    'kl_loss': tensor(3.0377, device='cuda:0')
+}
+  2%|▎         | 25/1000 [00:21<13:52,  1.17it/s]Model saved at epoch 24 with loss 124.19683837890625
+tensor([ True,  True, False,  True, False, False,  True, False,  True, False,
+         True,  True, False,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(150.3553, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(123.9309, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6210, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(24.8033, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False, False,  True,  True,  True,  True,  True,
+        False, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(149.0844, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(122.6074, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5772, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(24.8998, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True,  True,  True, False, False,  True, False,
+         True,  True,  True, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(139.0209, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(116.5860, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5429, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(20.8920, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True, False,  True,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(139.5569, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(113.2221, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5066, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(24.8282, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(116.6036, device='cuda:0'),
+    'image_recon_loss': tensor(112.0390, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7066, device='cuda:0'),
+    'kl_loss': tensor(2.8580, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(112.2110, device='cuda:0'),
+    'image_recon_loss': tensor(107.8122, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5330, device='cuda:0'),
+    'kl_loss': tensor(2.8658, device='cuda:0')
+}
+  3%|▎         | 26/1000 [00:22<14:10,  1.15it/s]Model saved at epoch 25 with loss 116.60356903076172
+tensor([ True, False, False,  True, False,  True,  True, False, False, False,
+        False, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(131.0329, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(113.7776, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5711, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(15.6843, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False,  True,  True,  True,  True, False,  True,  True,
+         True, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(143.4988, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(114.4072, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5481, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(27.5436, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True, False,  True,  True,  True,  True, False,
+        False, False, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(134.4067, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(113.1335, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5799, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(19.6933, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True,  True, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(137.9153, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(108.1157, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5364, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(28.2632, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(111.1959, device='cuda:0'),
+    'image_recon_loss': tensor(106.7082, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6937, device='cuda:0'),
+    'kl_loss': tensor(2.7940, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(107.1063, device='cuda:0'),
+    'image_recon_loss': tensor(102.8051, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5291, device='cuda:0'),
+    'kl_loss': tensor(2.7721, device='cuda:0')
+}
+  3%|▎         | 27/1000 [00:23<14:05,  1.15it/s]Model saved at epoch 26 with loss 111.1959457397461
+tensor([ True, False,  True,  True, False, False,  True, False,  True, False,
+         True, False,  True, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(131.5842, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(112.6596, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6385, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.2861, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True,  True, False, False,  True,  True, False,
+         True,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(128.0894, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(106.3316, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5258, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(20.2320, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False,  True,  True,  True,  True, False, False,
+        False, False, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(125.0128, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(105.3377, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5706, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(18.1045, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False,  True, False,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(127.8650, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(103.6626, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5221, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(22.6803, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(106.6048, device='cuda:0'),
+    'image_recon_loss': tensor(102.2073, device='cuda:0'),
+    'follower_recon_loss': tensor(1.7046, device='cuda:0'),
+    'kl_loss': tensor(2.6929, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(102.6187, device='cuda:0'),
+    'image_recon_loss': tensor(98.4307, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5157, device='cuda:0'),
+    'kl_loss': tensor(2.6723, device='cuda:0')
+}
+  3%|▎         | 28/1000 [00:24<14:04,  1.15it/s]Model saved at epoch 27 with loss 106.60478973388672
+tensor([False, False,  True, False,  True,  True, False, False, False,  True,
+         True,  True,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(129.0023, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(104.9609, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5761, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(22.4653, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False,  True,  True,  True,  True,  True,  True,
+        False,  True,  True,  True, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(129.7487, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(106.1810, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6119, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(21.9558, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True, False, False, False,  True,  True,  True,
+        False, False,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(120.3435, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(101.4575, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5344, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.3516, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([True, True, True, True, True, True, True, True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(134.0085, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(100.5970, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4790, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(31.9325, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(102.4326, device='cuda:0'),
+    'image_recon_loss': tensor(98.2001, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6840, device='cuda:0'),
+    'kl_loss': tensor(2.5485, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(98.2666, device='cuda:0'),
+    'image_recon_loss': tensor(94.2419, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5135, device='cuda:0'),
+    'kl_loss': tensor(2.5112, device='cuda:0')
+}
+  3%|▎         | 29/1000 [00:25<13:59,  1.16it/s]Model saved at epoch 28 with loss 102.43257141113281
+tensor([ True, False,  True,  True,  True,  True, False, False, False, False,
+        False, False,  True, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(116.6077, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(97.9120, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5152, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.1805, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True,  True,  True, False,  True, False,  True, False,
+        False, False,  True, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(117.5685, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(98.4215, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5707, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.5763, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True, False,  True, False,  True, False,  True,
+         True, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(118.3861, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(99.5655, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5443, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.2764, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True, False, False,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(110.3134, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(98.9767, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5463, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(9.7905, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(99.8186, device='cuda:0'),
+    'image_recon_loss': tensor(95.7514, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6754, device='cuda:0'),
+    'kl_loss': tensor(2.3918, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(95.1864, device='cuda:0'),
+    'image_recon_loss': tensor(91.3017, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5038, device='cuda:0'),
+    'kl_loss': tensor(2.3809, device='cuda:0')
+}
+  3%|▎         | 30/1000 [00:26<13:57,  1.16it/s]Model saved at epoch 29 with loss 99.818603515625
+tensor([False, False, False,  True, False, False, False, False, False, False,
+        False, False, False, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(100.5656, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(93.0606, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5272, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(5.9778, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False, False, False,  True, False,  True,  True,
+         True,  True,  True,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(118.9425, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(98.7064, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5427, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(18.6935, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False, False,  True,  True,  True, False,  True,  True,
+         True,  True,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(117.4978, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(95.4516, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5508, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(20.4954, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True,  True,  True, False,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(122.9445, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(98.3029, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5523, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(23.0893, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(96.9252, device='cuda:0'),
+    'image_recon_loss': tensor(93.0689, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6596, device='cuda:0'),
+    'kl_loss': tensor(2.1966, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(93.2795, device='cuda:0'),
+    'image_recon_loss': tensor(89.5841, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5064, device='cuda:0'),
+    'kl_loss': tensor(2.1890, device='cuda:0')
+}
+  3%|▎         | 31/1000 [00:27<13:54,  1.16it/s]Model saved at epoch 30 with loss 96.9251708984375
+tensor([False,  True,  True,  True, False, False,  True, False,  True, False,
+        False,  True,  True, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(114.0950, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(95.1850, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5794, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.3305, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False, False, False,  True, False,  True,  True,  True,
+        False, False,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(106.6782, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(92.9370, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5091, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(12.2321, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False, False,  True,  True, False,  True,  True, False,
+        False, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(113.2539, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(95.4969, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5271, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(16.2299, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True, False, False,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(111.6484, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(90.3889, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4970, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(19.7625, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(94.9533, device='cuda:0'),
+    'image_recon_loss': tensor(91.2179, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6516, device='cuda:0'),
+    'kl_loss': tensor(2.0838, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(90.6892, device='cuda:0'),
+    'image_recon_loss': tensor(87.1365, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4922, device='cuda:0'),
+    'kl_loss': tensor(2.0606, device='cuda:0')
+}
+  3%|▎         | 32/1000 [00:27<13:53,  1.16it/s]Model saved at epoch 31 with loss 94.95328521728516
+tensor([False, False,  True, False, False, False,  True,  True, False,  True,
+         True, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(108.8080, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(93.5257, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.6004, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(13.6819, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False, False,  True, False,  True,  True,  True,
+         True,  True, False,  True, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(116.6322, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(95.7605, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5344, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(19.3373, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False,  True,  True, False, False,  True,  True,  True,
+         True, False, False, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(105.8940, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(89.3327, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4862, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(15.0751, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False, False,  True,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(109.8873, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(89.6456, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5200, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(18.7218, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(92.6520, device='cuda:0'),
+    'image_recon_loss': tensor(89.0407, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6513, device='cuda:0'),
+    'kl_loss': tensor(1.9599, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(88.9095, device='cuda:0'),
+    'image_recon_loss': tensor(85.4964, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4749, device='cuda:0'),
+    'kl_loss': tensor(1.9382, device='cuda:0')
+}
+  3%|▎         | 33/1000 [00:28<13:52,  1.16it/s]Model saved at epoch 32 with loss 92.65196990966797
+tensor([ True,  True, False,  True,  True, False,  True, False,  True, False,
+         True, False, False,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(108.6424, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(89.1805, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4733, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.9886, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False, False, False, False, False,  True,  True, False,
+         True, False,  True, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(108.3168, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(94.0415, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5595, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(12.7158, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False, False, False,  True,  True, False, False,  True, False,
+        False, False, False, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(100.7143, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(87.9965, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5114, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(11.2064, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True, False, False, False, False, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(98.1275, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(88.0780, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5432, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(8.5062, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(91.2530, device='cuda:0'),
+    'image_recon_loss': tensor(87.7353, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6290, device='cuda:0'),
+    'kl_loss': tensor(1.8887, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(87.0927, device='cuda:0'),
+    'image_recon_loss': tensor(83.7534, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4683, device='cuda:0'),
+    'kl_loss': tensor(1.8710, device='cuda:0')
+}
+  3%|▎         | 34/1000 [00:29<13:50,  1.16it/s]Model saved at epoch 33 with loss 91.25296020507812
+tensor([False,  True,  True,  True,  True, False,  True,  True, False, False,
+         True,  True,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(110.3470, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(88.2259, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5164, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(20.6047, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True, False,  True,  True, False,  True, False,  True,
+        False, False,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(107.0064, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(91.8388, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5615, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(13.6061, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True, False,  True,  True, False,  True,  True, False,
+        False, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(105.2663, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(88.4573, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4748, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(15.3343, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False, False, False, False,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(93.2695, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(86.7522, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5116, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(5.0057, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(89.5768, device='cuda:0'),
+    'image_recon_loss': tensor(86.1595, device='cuda:0'),
+    'follower_recon_loss': tensor(1.6340, device='cuda:0'),
+    'kl_loss': tensor(1.7833, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(85.7622, device='cuda:0'),
+    'image_recon_loss': tensor(82.5251, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4543, device='cuda:0'),
+    'kl_loss': tensor(1.7828, device='cuda:0')
+}
+  4%|▎         | 35/1000 [00:30<13:50,  1.16it/s]Model saved at epoch 34 with loss 89.57677459716797
+tensor([False, False,  True,  True,  True, False, False,  True, False,  True,
+        False,  True, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(99.6396, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(85.7762, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4713, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(12.3922, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True, False, False, False, False,  True,
+        False, False, False, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(98.8337, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(88.5918, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5417, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(8.7002, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True,  True,  True,  True,  True,  True,
+        False,  True, False,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(108.1837, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(86.2123, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4801, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(20.4912, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False, False, False, False,  True, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(96.6838, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(90.3472, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5222, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(4.8144, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(89.2036, device='cuda:0'),
+    'image_recon_loss': tensor(85.8554, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5947, device='cuda:0'),
+    'kl_loss': tensor(1.7535, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(85.9247, device='cuda:0'),
+    'image_recon_loss': tensor(82.7482, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4636, device='cuda:0'),
+    'kl_loss': tensor(1.7129, device='cuda:0')
+}
+  4%|▎         | 36/1000 [00:31<13:49,  1.16it/s]Model saved at epoch 35 with loss 89.20359802246094
+tensor([ True,  True, False, False,  True, False,  True,  True,  True,  True,
+        False, False,  True, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(104.5139, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(85.5390, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4521, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(17.5229, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False, False, False, False,  True,  True,  True, False,
+        False, False,  True,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(101.5171, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(86.5286, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5421, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(13.4463, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False, False, False, False, False,  True, False, False,
+         True,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(100.2136, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(89.0322, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4842, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(9.6971, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True,  True, False,  True, False,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(102.5277, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(85.3100, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4505, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(15.7672, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(87.6061, device='cuda:0'),
+    'image_recon_loss': tensor(84.3435, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5977, device='cuda:0'),
+    'kl_loss': tensor(1.6649, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(85.0273, device='cuda:0'),
+    'image_recon_loss': tensor(81.9334, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4321, device='cuda:0'),
+    'kl_loss': tensor(1.6618, device='cuda:0')
+}
+  4%|▎         | 37/1000 [00:32<13:44,  1.17it/s]Model saved at epoch 36 with loss 87.60614013671875
+tensor([False, False, False, False, False,  True, False, False,  True,  True,
+        False,  True, False, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(93.4181, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(84.3123, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4418, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(7.6640, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False, False,  True, False,  True, False, False,  True,  True,
+         True, False,  True, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(96.8855, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(85.3435, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.5009, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(10.0411, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True,  True, False, False, False, False, False, False, False,
+        False, False, False,  True,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(97.3422, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(86.5482, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4691, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(9.3248, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False, False,  True,  True,  True, False,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(100.1465, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(83.7075, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4715, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(14.9675, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(86.5419, device='cuda:0'),
+    'image_recon_loss': tensor(83.3716, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5725, device='cuda:0'),
+    'kl_loss': tensor(1.5978, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(83.1191, device='cuda:0'),
+    'image_recon_loss': tensor(80.1238, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4242, device='cuda:0'),
+    'kl_loss': tensor(1.5711, device='cuda:0')
+}
+  4%|▍         | 38/1000 [00:33<13:43,  1.17it/s]Model saved at epoch 37 with loss 86.54188537597656
+tensor([False, False, False, False, False, False,  True,  True,  True,  True,
+        False, False, False, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(94.8271, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(84.4461, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4827, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(8.8983, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False, False,  True, False, False, False,  True, False,
+         True,  True,  True, False,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(95.3540, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(82.2056, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4536, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(11.6949, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True,  True, False, False, False,  True,  True,
+        False,  True,  True,  True,  True, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(100.8163, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(84.6403, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4709, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(14.7051, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True,  True, False,  True, False,  True, False, False],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(98.5980, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(85.6911, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4364, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(11.4704, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(85.0595, device='cuda:0'),
+    'image_recon_loss': tensor(82.0323, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5400, device='cuda:0'),
+    'kl_loss': tensor(1.4872, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(80.8529, device='cuda:0'),
+    'image_recon_loss': tensor(77.9855, device='cuda:0'),
+    'follower_recon_loss': tensor(1.4082, device='cuda:0'),
+    'kl_loss': tensor(1.4592, device='cuda:0')
+}
+  4%|▍         | 39/1000 [00:33<13:46,  1.16it/s]Model saved at epoch 38 with loss 85.0594711303711
+tensor([False,  True, False,  True,  True,  True, False, False, False,  True,
+         True, False, False, False,  True,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(98.2729, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(84.4082, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4488, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(12.4159, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([False,  True, False, False, False, False, False, False,  True,  True,
+         True, False,  True, False, False,  True], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(94.3220, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(82.7858, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4516, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(10.0845, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False, False,  True,  True, False,  True, False,
+        False, False,  True, False, False, False], device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(91.8519, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(80.7813, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4327, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(9.6380, device='cuda:0', grad_fn=<MulBackward0>)
+}
+tensor([ True, False,  True, False, False, False,  True,  True],
+       device='cuda:0')
+Losses:
+{
+    'total_loss': tensor(94.7091, device='cuda:0', grad_fn=<AddBackward0>),
+    'image_recon_loss': tensor(81.2822, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'follower_recon_loss': tensor(1.4980, device='cuda:0', 
+grad_fn=<MulBackward0>),
+    'kl_loss': tensor(11.9289, device='cuda:0', grad_fn=<MulBackward0>)
+}
+Losses:
+{
+    'total_loss': tensor(84.6408, device='cuda:0'),
+    'image_recon_loss': tensor(81.7167, device='cuda:0'),
+    'follower_recon_loss': tensor(1.5253, device='cuda:0'),
+    'kl_loss': tensor(1.3987, device='cuda:0')
+}
+Losses:
+{
+    'total_loss': tensor(80.8181, device='cuda:0'),
+    'image_recon_loss': tensor(78.0300, device='cuda:0'),
+    'follower_recon_loss': tensor(1.3969, device='cuda:0'),
+    'kl_loss': tensor(1.3912, device='cuda:0')
+}
+slurmstepd-gf-rtx3080-0: error: *** JOB 353 ON gf-rtx3080-0 CANCELLED AT 2025-08-14T15:00:56 ***

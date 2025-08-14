@@ -1,10 +1,9 @@
+from dataclasses import dataclass
+
 import numpy as np
 import torch.distributions as D
 import torch.nn.functional as F
-
 from torch import Tensor
-from dataclasses import dataclass
-from rich import print
 
 
 @dataclass
@@ -85,7 +84,5 @@ def world_model_loss(params: LossParameters, amplify_recon_loss: bool):
         "follower_recon_loss": follower_recon_loss,
         "kl_loss": kl_loss,
     }
-
-    print("Losses:", loss)  # デバッグ用出力
 
     return loss

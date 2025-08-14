@@ -12,6 +12,7 @@ from .utils.load_model import load_wm_model
 def main(cfg: Config):
     wm_model = load_wm_model(cfg)
     print_model_structure(wm_model)
+    print(wm_model.config)
     predictor = WMPredictor(cfg, wm_model)
     prediction = predictor.predict()
     visualizer = WMReconVisualizer(cfg)

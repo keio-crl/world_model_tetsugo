@@ -1,17 +1,19 @@
 import os
-import torch
-import wandb
-from omegaconf import OmegaConf
-
-from torch import Tensor
-from tqdm import tqdm
-from safetensors.torch import save_file
-from torch.utils.data import DataLoader
-from torch.optim import Optimizer
 from typing import Callable
-from src.utils.train.loss_func import world_model_loss, LossParameters
-from ...world_model.model.world_model import WorldModel
+
+import torch
+from omegaconf import OmegaConf
+from safetensors.torch import save_file
+from torch import Tensor
+from torch.optim import Optimizer
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+
+import wandb
+from src.utils.train.loss_func import LossParameters, world_model_loss
+
 from ...config.config import Config
+from ...world_model.model.world_model import WorldModel
 
 
 class Trainer:
@@ -160,7 +162,9 @@ def train_loop(
             loss_config.follower_recon_loss_weight,
         )
 
-        loss = loss_func(loss_params, config.train.trainer.amplify_recon_loss)
+        loss = loss_func(
+            loss_params, config.train.train_details.loss.amplify_recon_loss
+        )
 
         train_total_loss = loss["total_loss"]
         optimizer.zero_grad()
@@ -222,7 +226,9 @@ def valid_loop(
             loss_config.image_recon_loss_weight,
             loss_config.follower_recon_loss_weight,
         )
-        loss = loss_func(loss_params, config.train.trainer.amplify_recon_loss)
+        loss = loss_func(
+            loss_params, config.train.train_details.loss.amplify_recon_loss
+        )
         total_loss += loss["total_loss"].item()
         image_recon_loss += loss["image_recon_loss"].item()
         follower_recon_loss += loss["follower_recon_loss"].item()
